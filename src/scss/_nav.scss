@@ -1,0 +1,20 @@
+
+@use 'variables' as *;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    align-items: center;
+    margin-right: 2rem;
+
+    &__item {
+        color: $color-font-primary;
+        font-size: $font-size-nav;
+        text-decoration: none;
+        &:hover {
+            color: $color-secondary;
+            animation: toTop;
+            animation-duration: 1s;
+        }
+    }
+}

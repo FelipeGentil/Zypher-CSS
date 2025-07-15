@@ -1,0 +1,46 @@
+
+
+# 👉 Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# 👉 Ambiente
+.env
+.env.*.local
+
+# 👉 Mac
+.DS_Store
+
+# 👉 Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 👉 IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 👉 Build
+/dist
+/build
+/.parcel-cache
+/.turbo
+/.next
+out/
+
+# 👉 Logs
+logs/
+*.log
+
+# 👉 Coverage
+coverage/
+*.lcov
+
+# 👉 Webpack
+*.map
+.cache/

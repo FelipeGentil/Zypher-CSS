@@ -1,0 +1,18 @@
+
+@use 'variables' as *;
+
+header .container {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .hero {
+        h1 {
+            padding: 1rem 0 0;
+            text-align: center;
+            width: 100%;
+            align-items: center;
+            margin-right: 2rem;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+
+@use "variables" as *;
+
+#produtos {
+    background-color: #dcdcdc;
+    h1 {
+        text-align: center;
+        color: $color-primary;
+        text-shadow: 2px 2px 4px rgba(251, 33, 196, 0.5);
+    }
+}

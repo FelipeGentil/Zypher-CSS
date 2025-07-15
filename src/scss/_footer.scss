@@ -1,0 +1,17 @@
+
+@use 'variables' as *;
+footer {
+    justify-content: center;
+
+    .container {
+        background-color: rgba(114, 114, 114, 0.2);
+    }
+    p {
+        color: $color-font-primary;
+        font-size: $font-size-default;
+        text-align: center;
+        a {
+            color: $color-secondary;
+        }
+    }
+}
