@@ -1,49 +1,29 @@
 .carrossel {
   width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-
-  &__container {
-    display: flex;
-    animation: slides 20s infinite linear;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  &__item {
-    flex: 2 0 auto;
-
-    img {
-      height: 166px; 
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgb(213, 23, 204);
-    }
-  }
+  overflow: hidden; // ESSENCIAL para cortar o que sai da tela
+  position: relative;
 }
 
-button.prev,
-button.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 3;
-  color: #333;
-  transition: 0.3s;
-
-  &:hover {
-    color: #555;
-  }
+.carrossel__container {
+  display: flex;
+  gap: 2rem;
+  animation: slides 12s infinite linear;
+  width: max-content; // ou 200% se quiser algo mais controlado
 }
 
-button.prev {
-  left: 1rem;
+.carrossel__item {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 900px; // ou ajuste conforme seu layout
 }
 
-button.next {
-  right: 1rem;
+.carrossel__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slides {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }

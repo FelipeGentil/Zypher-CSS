@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+// Telas extra pequenas (primeiro)
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+    }
+}
+
+// Telas pequenas
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 720px;
+    }
+    [class^="col-"] {
+        width: 50%;
+    }
+}
+
+// Telas médias
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 960px;
+    }
+    [class^="col-"] {
+        width: 33.3333%;
+    }
+}
+
+// Telas grandes
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    [class^="col-"] {
+        width: 25%;
+    }
+}
+

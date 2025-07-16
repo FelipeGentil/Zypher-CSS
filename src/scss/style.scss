@@ -9,16 +9,33 @@
 @use 'footer';
 @use 'animation';
 @use 'contato';
+@use 'grid';
+@use 'responsive';
 
+@viewport {
+    width: device-width;
+    height: device-height;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html {
     font-size: 62.5%;
-}
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    }
 
 body {
     background-color: $color-primary;
     font-family: $font-default;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 h1 {
